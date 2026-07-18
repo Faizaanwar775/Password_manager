@@ -1,0 +1,27 @@
+[project]
+name = "khizex-password-manager"
+version = "1.0.0"
+description = "Secure local password manager -- Khizex Python Engineering Internship Assignment 02"
+requires-python = ">=3.10"
+dependencies = [
+    "cryptography>=42.0.0",
+    "argon2-cffi>=23.1.0",
+    "pydantic>=2.6.0",
+    "pyperclip>=1.8.2",
+]
+
+[project.scripts]
+khizex-pm = "khizex_pm.cli.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_unused_ignores = true
+disallow_any_explicit = false
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

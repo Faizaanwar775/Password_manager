@@ -1,0 +1,5 @@
+cryptography>=42.0.0
+argon2-cffi>=23.1.0
+pydantic>=2.6.0
+pyperclip>=1.8.2
+pytest>=8.0.0
